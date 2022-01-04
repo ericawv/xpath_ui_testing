@@ -7,7 +7,7 @@ const driver = new Builder().withCapabilities(Capabilities.chrome()).build()
 
 jest.setTimeout(30000)
 
-test("Google", async () => {
+test("Github", async () => {
     await driver.get('https://www.github.com/')
 
     let signIn = await driver.findElement(By.css('[href="/login"]')).click()
@@ -20,15 +20,13 @@ test("Google", async () => {
 
     await driver.findElement(By.css('[class="avatar avatar-small circle"]')).click()
 
-    driver.findElement(By.css('[data-hydro-click-hmac="48191b45047acd8773b3cddb27021c7f069089ff3eb5efcf7b4c72287dd46724"]')).click()
+    // driver.findElement(By.css('[data-hydro-click-hmac="48191b45047acd8773b3cddb27021c7f069089ff3eb5efcf7b4c72287dd46724"]')).click()
 
-    //Thread.sleep(2000)
+    // Thread.sleep(2000)
 
-   
-    // await inPut.sendKeys('Harder They Fall\n')
+    
 
+    await driver.sleep(5000)
 
-    // await driver.sleep(5000)
-
-    // await driver.quit()
+     await driver.quit()
 })
