@@ -1,0 +1,20 @@
+{
+  "name": "ghtest",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/selenium-webdriver": "^4.0.15",
+    "chromedriver": "^96.0.0",
+    "jest": "^26.6.3",
+    "selenium-webdriver": "^4.0.0"
+  }
+}
